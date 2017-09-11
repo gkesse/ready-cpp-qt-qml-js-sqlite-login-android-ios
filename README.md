@@ -39,6 +39,24 @@ Les Widgets Frame abordés :
 * [Splitter](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
 * [ScrollArea](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
 
+Les Widgets Dialog abordés :  
+* [ColorDialog](https://github.com/gkesse/ReadyQt/tree/master/ColorDialog "ColorDialog")  
+* [ErrorMessage](https://github.com/gkesse/ReadyQt/tree/master/ErrorMessage "ErrorMessage")  
+* [FileDialog](https://github.com/gkesse/ReadyQt/tree/master/FileDialog "FileDialog")  
+* [FontDialog](https://github.com/gkesse/ReadyQt/tree/master/FontDialog "FontDialog")  
+* [InputDialog](https://github.com/gkesse/ReadyQt/tree/master/InputDialog "InputDialog")  
+* [MessageBox](https://github.com/gkesse/ReadyQt/tree/master/MessageBox "MessageBox")  
+* [ProgressDialog](https://github.com/gkesse/ReadyQt/tree/master/ProgressDialog "ProgressDialog")  
+* [Wizard](https://github.com/gkesse/ReadyQt/tree/master/Wizard "Wizard")  
+
+Les Widgets Spéciaux abordés :  
+* [CalendarWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "CalendarWidget")  
+* [ComboBox](https://github.com/gkesse/ReadyQt/tree/master/ComboBox "ComboBox")  
+* [FontComboBox](https://github.com/gkesse/ReadyQt/tree/master/FontComboBox "FontComboBox")  
+* [DesktopWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "DesktopWidget")  
+* [CalendarWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "CalendarWidget")  
+* [CalendarWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "CalendarWidget")  
+
 # Technologies
 
 Le développement de la bibliothèque **ReadyQt** a nécessité les technologies suivantes :
