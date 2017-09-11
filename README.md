@@ -16,7 +16,7 @@ C'est une bibliothèque développée en C++/Qt et maintenu par
 [Gerard KESSE](http://5.48.215.193:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
 Les Widgets Button abordés :  
-* [Button](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
+* [PushButton](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
 * [RadioButton](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
 * [ToolButton](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
 * [CheckBox](https://github.com/gkesse/ReadyQt/tree/master/Button "Button") 
