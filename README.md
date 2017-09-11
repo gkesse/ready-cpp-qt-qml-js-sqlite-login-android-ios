@@ -20,6 +20,11 @@ Les Widgets Button abordés :
 * [RadioButton](https://github.com/gkesse/ReadyQt/tree/master/RadioButton "RadioButton")  
 * [ToolButton](https://github.com/gkesse/ReadyQt/tree/master/ToolButton "ToolButton")  
 * [CheckBox](https://github.com/gkesse/ReadyQt/tree/master/CheckBox "CheckBox") 
+  
+Les Widgets Slider abordés :  
+* [Slider](https://github.com/gkesse/ReadyQt/tree/master/Slider "Slider")  
+* [ScrollBar](https://github.com/gkesse/ReadyQt/tree/master/ScrollBar "ScrollBar")  
+* [Dial](https://github.com/gkesse/ReadyQt/tree/master/Dial "Dial")  
 
 Les Widgets Frame abordés :  
 * [Label](https://github.com/gkesse/ReadyQt/tree/master/Label "Label")  
