@@ -15,12 +15,19 @@ Avec à la fois des compétences en Systèmes Embarqués et en Robotique.
 C'est une bibliothèque développée en C++/Qt et maintenu par 
 [Gerard KESSE](http://5.48.215.193:8855/presentation/ "Accédez à mon site web (ReadyDev)").
 
-Les widgets abordés :  
-* [Button](https://github.com/gkesse/ReadyDSP/tree/master/Button "Button")  
-* [RadioButton](https://github.com/gkesse/ReadyDSP/tree/master/RadioButton "RadioButton")  
-* [ToolButton](https://github.com/gkesse/ReadyDSP/tree/master/ToolButton "ToolButton")  
-* [CheckBox](https://github.com/gkesse/ReadyDSP/tree/master/CheckBox "CheckBox")  
-* [Label](https://github.com/gkesse/ReadyDSP/tree/master/Label "Label")  
+Les Widgets Button abordés :  
+* [Button](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
+* [RadioButton](https://github.com/gkesse/ReadyQt/tree/master/RadioButton "RadioButton")  
+* [ToolButton](https://github.com/gkesse/ReadyQt/tree/master/ToolButton "ToolButton")  
+* [CheckBox](https://github.com/gkesse/ReadyQt/tree/master/CheckBox "CheckBox") 
+
+Les Widgets Frame abordés :  
+* [Label](https://github.com/gkesse/ReadyQt/tree/master/Label "Label")  
+* [LCDNumber](https://github.com/gkesse/ReadyQt/tree/master/LCDNumber "LCDNumber")  
+* [ToolBox](https://github.com/gkesse/ReadyQt/tree/master/ToolBox "ToolBox")  
+* [StackedWidget](https://github.com/gkesse/ReadyQt/tree/master/StackedWidget "StackedWidget")  
+* [Splitter](https://github.com/gkesse/ReadyQt/tree/master/Splitter "Splitter")  
+* [ScrollArea](https://github.com/gkesse/ReadyQt/tree/master/ScrollArea "ScrollArea")  
 
 # Technologies
 
