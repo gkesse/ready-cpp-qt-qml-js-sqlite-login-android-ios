@@ -17,22 +17,27 @@ C'est une bibliothèque développée en C++/Qt et maintenu par
 
 Les Widgets Button abordés :  
 * [Button](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
-* [RadioButton](https://github.com/gkesse/ReadyQt/tree/master/RadioButton "RadioButton")  
-* [ToolButton](https://github.com/gkesse/ReadyQt/tree/master/ToolButton "ToolButton")  
-* [CheckBox](https://github.com/gkesse/ReadyQt/tree/master/CheckBox "CheckBox") 
+* [RadioButton](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
+* [ToolButton](https://github.com/gkesse/ReadyQt/tree/master/Button "Button")  
+* [CheckBox](https://github.com/gkesse/ReadyQt/tree/master/Button "Button") 
   
 Les Widgets Slider abordés :  
 * [Slider](https://github.com/gkesse/ReadyQt/tree/master/Slider "Slider")  
-* [ScrollBar](https://github.com/gkesse/ReadyQt/tree/master/ScrollBar "ScrollBar")  
-* [Dial](https://github.com/gkesse/ReadyQt/tree/master/Dial "Dial")  
+* [ScrollBar](https://github.com/gkesse/ReadyQt/tree/master/Slider "Slider")  
+* [Dial](https://github.com/gkesse/ReadyQt/tree/master/Slider "Slider")  
 
+Les Widgets SpinBox abordés :  
+* [DateTimeEdit](https://github.com/gkesse/ReadyQt/tree/master/Slider "SpinBox")  
+* [DoubleSpinBox](https://github.com/gkesse/ReadyQt/tree/master/SpinBox "SpinBox")  
+* [SpinBox](https://github.com/gkesse/ReadyQt/tree/master/SpinBox "SpinBox")  
+  
 Les Widgets Frame abordés :  
-* [Label](https://github.com/gkesse/ReadyQt/tree/master/Label "Label")  
-* [LCDNumber](https://github.com/gkesse/ReadyQt/tree/master/LCDNumber "LCDNumber")  
-* [ToolBox](https://github.com/gkesse/ReadyQt/tree/master/ToolBox "ToolBox")  
-* [StackedWidget](https://github.com/gkesse/ReadyQt/tree/master/StackedWidget "StackedWidget")  
-* [Splitter](https://github.com/gkesse/ReadyQt/tree/master/Splitter "Splitter")  
-* [ScrollArea](https://github.com/gkesse/ReadyQt/tree/master/ScrollArea "ScrollArea")  
+* [Label](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
+* [LCDNumber](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
+* [ToolBox](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
+* [StackedWidget](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
+* [Splitter](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
+* [ScrollArea](https://github.com/gkesse/ReadyQt/tree/master/Frame "Frame")  
 
 # Technologies
 
