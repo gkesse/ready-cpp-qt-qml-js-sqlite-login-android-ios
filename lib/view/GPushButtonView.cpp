@@ -9,8 +9,8 @@ GPushButtonView* GPushButtonView::m_instance = 0;
 GPushButtonView::GPushButtonView(QWidget *parent) :
     QWidget(parent), ui(new Ui::GPushButtonView) {
     ui->setupUi(this);
-    resize(400, 300);
-    createConnexions();
+    createObjects();
+    createConnections();
 }
 //===============================================
 GPushButtonView::~GPushButtonView() {
@@ -29,7 +29,11 @@ void GPushButtonView::closeEvent(QCloseEvent *event) {
     event->accept();
 }
 //===============================================
-void GPushButtonView::createConnexions() {
+void GPushButtonView::createObjects() {
+
+}
+//===============================================
+    void GPushButtonView::createConnections() {
     connect(ui->m_create, SIGNAL(clicked()), this, SLOT(createSlot()));
     connect(ui->m_read, SIGNAL(clicked()), this, SLOT(readSlot()));
     connect(ui->m_update, SIGNAL(clicked()), this, SLOT(updateSlot()));

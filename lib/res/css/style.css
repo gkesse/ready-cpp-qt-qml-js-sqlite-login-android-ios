@@ -42,9 +42,12 @@ QToolButton:pressed {
 }
 
 /* QLabel */
-QLabel {
+QLabel#m_title,
+QLabel#m_title2 {
     background: rgba(255, 255, 255, 0.2);
-    font-size: 20px;
+    font-weight: bold;
+    color: #f67b20;
+    padding: 5px 5px;
 }
 
 /* QComboBox */
@@ -149,7 +152,7 @@ QTabBar::tab:selected {
 GMessageView,
 GPushButtonView,
 GToolButtonView,
-GRaidoButtonView,
+GRadioButtonView,
 GCheckBoxView,
 GComboBoxView,
 GLabelView,

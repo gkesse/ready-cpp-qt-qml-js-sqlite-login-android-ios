@@ -1,4 +1,3 @@
-include(C:/dev/QtAwesome/QtAwesome.pri)
 include(../../lib/GLib.pri)
 
 SOURCES += \

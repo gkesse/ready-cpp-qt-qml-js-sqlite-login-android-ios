@@ -23,7 +23,7 @@ protected:
 
 private:
     void createObjects();
-    void createConnexions();
+    void createConnections();
 
 public slots:
     void facebookSlot();

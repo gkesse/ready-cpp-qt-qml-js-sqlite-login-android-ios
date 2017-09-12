@@ -11,7 +11,7 @@ GToolButtonView::GToolButtonView(QWidget *parent) :
     QWidget(parent), ui(new Ui::GToolButtonView) {
     ui->setupUi(this);
     createObjects();
-    createConnexions();
+    createConnections();
 }
 //===============================================
 GToolButtonView::~GToolButtonView() {
@@ -44,7 +44,7 @@ void GToolButtonView::createObjects() {
     resize(400, 300);
 }
 //===============================================
-void GToolButtonView::createConnexions() {
+void GToolButtonView::createConnections() {
     connect(ui->m_facebook, SIGNAL(clicked()), this, SLOT(facebookSlot()));
     connect(ui->m_skype, SIGNAL(clicked()), this, SLOT(skypeSlot()));
     connect(ui->m_github, SIGNAL(clicked()), this, SLOT(githubSlot()));

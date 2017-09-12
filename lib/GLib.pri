@@ -1,3 +1,4 @@
+include(C:/dev/QtAwesome/QtAwesome.pri)
 include(view/GView.pri)
 
 INCLUDEPATH += \

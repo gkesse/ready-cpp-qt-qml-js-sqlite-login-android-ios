@@ -8,7 +8,8 @@ GMessageView* GMessageView::m_instance = 0;
 GMessageView::GMessageView(QWidget *parent) :
 QWidget(parent), ui(new Ui::GMessageView) {
     ui->setupUi(this);
-    setPosition();
+    createObjects();
+    createConnections();
 }
 //===============================================
 GMessageView::~GMessageView() {
@@ -20,6 +21,14 @@ GMessageView* GMessageView::Instance() {
         m_instance = new GMessageView;
     }
     return m_instance;
+}
+//===============================================
+void GMessageView::createObjects() {
+    setPosition();
+}
+//===============================================
+void GMessageView::createConnections() {
+    connect(ui->m_clear, SIGNAL(clicked()), ui->m_message, SLOT(clear()));
 }
 //===============================================
 void GMessageView::setPosition() {
@@ -61,6 +70,10 @@ void GMessageView::showData(const ulong& data, const QString& name) {
 void GMessageView::showData(const double& data, const QString& name) {
     QString m_format = QString("%1").arg(data);
     showData(m_format, name);
+}
+//===============================================
+void GMessageView::separate() {
+    showData("---------------------------------------");
 }
 //===============================================
 

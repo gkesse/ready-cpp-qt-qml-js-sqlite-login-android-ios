@@ -1,14 +1,14 @@
 //===============================================
 #include "GProcess.h"
 #include "GMessageView.h"
-#include "GPushButtonView.h"
+#include "GRadioButtonView.h"
 //===============================================
 GProcess* GProcess::m_instance = 0;
 //===============================================
 GProcess::GProcess(QObject *parent) :
     QObject(parent) {
     GMessageView::Instance()->show();
-    GPushButtonView::Instance()->show();
+    GRadioButtonView::Instance()->show();
 }
 //===============================================
 GProcess::~GProcess() {

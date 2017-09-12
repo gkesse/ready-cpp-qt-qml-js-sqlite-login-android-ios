@@ -22,7 +22,8 @@ protected:
     void closeEvent(QCloseEvent *event);
 
 private:
-    void createConnexions();
+    void createObjects();
+    void createConnections();
 
 public slots:
     void createSlot();

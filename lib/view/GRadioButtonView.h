@@ -1,29 +1,39 @@
 //===============================================
-#ifndef _GButtonView_
-#define _GButtonView_
+#ifndef _GRadioButtonView_
+#define _GRadioButtonView_
 //===============================================
 #include <QWidget>
+#include <QButtonGroup>
 //===============================================
 namespace Ui {
-class GButtonView;
+class GRadioButtonView;
 }
 //===============================================
-class GButtonView : public QWidget {
+class GRadioButtonView : public QWidget {
     Q_OBJECT
 
 private:
-    GButtonView(QWidget *parent = 0);
+    GRadioButtonView(QWidget *parent = 0);
 
 public:
-    ~GButtonView();
-    static GButtonView* Instance();
+    ~GRadioButtonView();
+    static GRadioButtonView* Instance();
 
 protected:
     void closeEvent(QCloseEvent *event);
 
 private:
-    static GButtonView* m_instance;
-    Ui::GButtonView *ui;
+    void createObjects();
+    void createConnections();
+
+public slots:
+    void runSlot();
+
+private:
+    static GRadioButtonView* m_instance;
+    Ui::GRadioButtonView *ui;
+    QButtonGroup* m_radioGroup1;
+    QButtonGroup* m_radioGroup2;
 };
 //===============================================
 #endif

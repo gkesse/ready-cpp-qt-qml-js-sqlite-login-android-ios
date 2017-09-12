@@ -19,6 +19,8 @@ public:
     static GMessageView* Instance();
 
 private:
+    void createObjects();
+    void createConnections();
     void setPosition();
 
 public:
@@ -28,6 +30,7 @@ public:
     void showData(const long& data, const QString& name = "");
     void showData(const ulong& data, const QString& name = "");
     void showData(const double& data, const QString& name = "");
+    void separate();
 
 private:
     static GMessageView* m_instance;
