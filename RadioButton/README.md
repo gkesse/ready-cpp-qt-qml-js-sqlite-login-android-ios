@@ -1,7 +1,7 @@
 # RadioButton
 
-Un **RadioButton** est un objet utilisé pour sélectionner une seule option dans une liste d'options.
-Il permet de faire un seul choix parmi plusieurs.
+Un **RadioButton** est un objet utilisé pour sélectionner une seule option dans une liste d'options.  
+Il permet de faire un seul choix dans une liste de choix.
 
 # Aperçu
 
