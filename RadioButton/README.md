@@ -1,12 +1,12 @@
-# PushButton
+# RadioButton
 
-Un **PushButton** est un objet utilisé pour générer une action à partir d'un click de la souris.  
-Il peut s'initialiser soit avec un texte, soit avec une icône ou soit avec les 2 à la fois.
+Un **RadioButton** est un objet utilisé pour sélectionner une seule option dans une liste d'options.
+Il permet de faire un seul choix parmi plusieurs.
 
 # Aperçu
 
-![PushButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/PushButton.png)
-![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/MessageView.png)
+![RadioButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/RadioButton/img/RadioButton.png)
+![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/RadioButton/img/MessageView.png)
 
 # Voir Aussi
 

@@ -1,12 +1,12 @@
-# PushButton
+# CheckBox
 
-Un **PushButton** est un objet utilisé pour générer une action à partir d'un click de la souris.  
-Il peut s'initialiser soit avec un texte, soit avec une icône ou soit avec les 2 à la fois.
+Un **CheckBox** est un objet utilisé pour sélectionner un ou plusieurs options dans une liste d'options.
+Il permet de faire un ou plusieurs choix dans une liste de choix.
 
 # Aperçu
 
-![PushButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/PushButton.png)
-![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/MessageView.png)
+![RadioButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/CheckBox/img/CheckBox.png)
+![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/CheckBox/img/MessageView.png)
 
 # Voir Aussi
 
