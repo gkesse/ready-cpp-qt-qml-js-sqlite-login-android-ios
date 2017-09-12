@@ -25,7 +25,7 @@ GMessageView* GMessageView::Instance() {
 void GMessageView::setPosition() {
     QRect m_desktop = QApplication::desktop()->screenGeometry();
     int m_width = 400;
-    int m_height = 200;
+    int m_height = 300;
     int m_x = m_desktop.width() - m_width;
     int m_y = m_desktop.height() - m_height - 50;
     setGeometry(m_x, m_y, m_width, m_height);

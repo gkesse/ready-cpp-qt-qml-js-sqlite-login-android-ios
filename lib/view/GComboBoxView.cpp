@@ -8,7 +8,7 @@ GComboBoxView* GComboBoxView::m_instance = 0;
 GComboBoxView::GComboBoxView(QWidget *parent) :
     QWidget(parent), ui(new Ui::GComboBoxView) {
     ui->setupUi(this);
-
+    resize(400, 300);
 }
 //===============================================
 GComboBoxView::~GComboBoxView() {

@@ -1,29 +1,28 @@
 //===============================================
+#include "GProcess.h"
+#include "GMessageView.h"
 #include "GButtonView.h"
-#include "ui_GButtonView.h"
-#include <QCloseEvent>
 //===============================================
-GButtonView* GButtonView::m_instance = 0;
+GProcess* GProcess::m_instance = 0;
 //===============================================
-GButtonView::GButtonView(QWidget *parent) :
-    QWidget(parent), ui(new Ui::GButtonView) {
-    ui->setupUi(this);
+GProcess::GProcess(QObject *parent) :
+    QObject(parent) {
+    GMessageView::Instance()->show();
+    GButtonView::Instance()->show();
+}
+//===============================================
+GProcess::~GProcess() {
 
 }
 //===============================================
-GButtonView::~GButtonView() {
-    delete ui;
-}
-//===============================================
-GButtonView* GButtonView::Instance() {
+GProcess* GProcess::Instance() {
     if(m_instance == 0) {
-        m_instance = new GButtonView;
+        m_instance = new GProcess;
     }
     return m_instance;
 }
 //===============================================
-void GButtonView::closeEvent(QCloseEvent *event) {
-    qApp->closeAllWindows();
-    event->accept();
+void GProcess::run() {
+
 }
 //===============================================

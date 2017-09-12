@@ -8,7 +8,7 @@ GOpenGL* GOpenGL::m_instance = 0;
 GOpenGL::GOpenGL(QWidget *parent) :
     QWidget(parent), ui(new Ui::GOpenGL) {
     ui->setupUi(this);
-
+    resize(400, 300);
 }
 //===============================================
 GOpenGL::~GOpenGL() {

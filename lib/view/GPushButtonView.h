@@ -1,29 +1,38 @@
 //===============================================
-#ifndef _GButtonView_
-#define _GButtonView_
+#ifndef _GPushButtonView_
+#define _GPushButtonView_
 //===============================================
 #include <QWidget>
 //===============================================
 namespace Ui {
-class GButtonView;
+class GPushButtonView;
 }
 //===============================================
-class GButtonView : public QWidget {
+class GPushButtonView : public QWidget {
     Q_OBJECT
 
 private:
-    GButtonView(QWidget *parent = 0);
+    GPushButtonView(QWidget *parent = 0);
 
 public:
-    ~GButtonView();
-    static GButtonView* Instance();
+    ~GPushButtonView();
+    static GPushButtonView* Instance();
 
 protected:
     void closeEvent(QCloseEvent *event);
 
 private:
-    static GButtonView* m_instance;
-    Ui::GButtonView *ui;
+    void createConnexions();
+
+public slots:
+    void createSlot();
+    void readSlot();
+    void updateSlot();
+    void deleteSlot();
+
+private:
+    static GPushButtonView* m_instance;
+    Ui::GPushButtonView *ui;
 };
 //===============================================
 #endif

@@ -8,7 +8,7 @@ GLabelView* GLabelView::m_instance = 0;
 GLabelView::GLabelView(QWidget *parent) :
     QWidget(parent), ui(new Ui::GLabelView) {
     ui->setupUi(this);
-
+    resize(400, 300);
 }
 //===============================================
 GLabelView::~GLabelView() {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GButtonView</class>
- <widget class="QWidget" name="GButtonView">
+ <class>GPushButtonView</class>
+ <widget class="QWidget" name="GPushButtonView">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,38 +11,48 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>GButtonView</string>
+   <string>GPushButtonView</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0">
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QPushButton" name="m_one">
+      <widget class="QPushButton" name="m_create">
        <property name="cursor">
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
-        <string>One</string>
+        <string>Create</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="m_two">
+      <widget class="QPushButton" name="m_read">
        <property name="cursor">
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
-        <string>Two</string>
+        <string>Read</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="_three">
+      <widget class="QPushButton" name="m_update">
        <property name="cursor">
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
-        <string>Three</string>
+        <string>Update</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="m_delete">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Delete</string>
        </property>
       </widget>
      </item>
