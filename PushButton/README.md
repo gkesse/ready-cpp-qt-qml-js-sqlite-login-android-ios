@@ -1,8 +1,8 @@
 # PushButton
 
-Un **PushButton** permet de démarrer une action à partir d'un click de la souris.
+Un **PushButton** est utilisé pour générer une action à partir d'un click de la souris.
 
-# Exemple
+# Aperçu
 
 ![PushButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/PushButton.png)
 
