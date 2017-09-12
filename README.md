@@ -54,8 +54,19 @@ Les Widgets Spéciaux abordés :
 * [ComboBox](https://github.com/gkesse/ReadyQt/tree/master/ComboBox "ComboBox")  
 * [FontComboBox](https://github.com/gkesse/ReadyQt/tree/master/FontComboBox "FontComboBox")  
 * [DesktopWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "DesktopWidget")  
-* [CalendarWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "CalendarWidget")  
-* [CalendarWidget](https://github.com/gkesse/ReadyQt/tree/master/CalendarWidget "CalendarWidget")  
+* [DialogButtonBox](https://github.com/gkesse/ReadyQt/tree/master/DialogButtonBox "DialogButtonBox")  
+* [DockWidget](https://github.com/gkesse/ReadyQt/tree/master/DockWidget "DockWidget")  
+* [GroupBox](https://github.com/gkesse/ReadyQt/tree/master/GroupBox "GroupBox")  
+* [LineEdit](https://github.com/gkesse/ReadyQt/tree/master/LineEdit "LineEdit")  
+
+Les Objets Animation abordés :  
+* [AnimationGroup](https://github.com/gkesse/ReadyQt/tree/master/AnimationGroup "AnimationGroup")  
+* [PauseAnimation](https://github.com/gkesse/ReadyQt/tree/master/PauseAnimation "PauseAnimation")  
+* [VariantAnimation](https://github.com/gkesse/ReadyQt/tree/master/VariantAnimation "VariantAnimation")  
+
+Les Objets Spéciaux abordés :  
+* [Thread](https://github.com/gkesse/ReadyQt/tree/master/Thread "Thread")  
+* [Timer](https://github.com/gkesse/ReadyQt/tree/master/Timer "Timer")  
 
 # Technologies
 
