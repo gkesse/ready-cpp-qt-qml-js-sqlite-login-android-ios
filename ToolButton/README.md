@@ -1,7 +1,8 @@
 # ToolButton
 
 Un **ToolButton** est utilisé pour générer une action à partir d'un click de la souris.  
-Il peut s'initialiser soit avec un texte ou soit avec une icône.
+Il peut s'initialiser soit avec un texte ou soit avec une icône, mais pas avec les 2 à la fois.  
+Il est généralement utilisé dans un ToolBar.
 
 # Aperçu
 
