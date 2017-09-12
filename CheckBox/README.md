@@ -1,6 +1,6 @@
 # CheckBox
 
-Un **CheckBox** est un objet utilisé pour sélectionner un ou plusieurs options dans une liste d'options.
+Un **CheckBox** est un objet utilisé pour sélectionner un ou plusieurs options dans une liste d'options.  
 Il permet de faire un ou plusieurs choix dans une liste de choix.
 
 # Aperçu
