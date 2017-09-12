@@ -25,6 +25,22 @@ QPushButton:pressed {
     border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
+/* QToolButton */
+QToolButton {
+    background: rgba(255, 255, 255, 0.2);
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+QToolButton:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+QToolButton:pressed {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
 /* QLabel */
 QLabel {
     background: rgba(255, 255, 255, 0.2);
@@ -132,6 +148,9 @@ QTabBar::tab:selected {
 /* Backgound */
 GMessageView,
 GPushButtonView,
+GToolButtonView,
+GRaidoButtonView,
+GCheckBoxView,
 GComboBoxView,
 GLabelView,
 GOpenGL {

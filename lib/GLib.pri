@@ -8,7 +8,9 @@ RESOURCES += \
 
 
 HEADERS += \
-    $$PWD/GStyle.h
+    $$PWD/GStyle.h \
+    $$PWD/GPicto.h
 
 SOURCES += \
-    $$PWD/GStyle.cpp
+    $$PWD/GStyle.cpp \
+    $$PWD/GPicto.cpp
