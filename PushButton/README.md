@@ -5,7 +5,7 @@ Un **PushButton** est utilisé pour générer une action à partir d'un click de la 
 # Aperçu
 
 ![PushButton](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/PushButton.png)
-![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/ToolButton/img/MessageView.png)
+![MessageView](https://raw.githubusercontent.com/gkesse/ReadyQt/master/PushButton/img/MessageView.png)
 
 # Voir Aussi
 
