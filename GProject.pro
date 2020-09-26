@@ -13,7 +13,9 @@ INCLUDEPATH +=\
     $$PWD/src/include \
     
 HEADERS +=\
+    $$PWD/src/include/GWindow.h \
     
 SOURCES +=\
     $$PWD/src/main.cpp \
     $$PWD/src/manager/GManager.cpp \
+    $$PWD/src/manager/GWindow.cpp \
