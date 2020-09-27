@@ -19,9 +19,6 @@ GManager::GManager() {
     m_mgr->title_bar->icon_size = 16;
     m_mgr->title_bar->color = "teal";
     m_mgr->title_bar->url = "https://readydev.ovh";
-    // font
-    m_mgr->font = new sGFont;
-    m_mgr->font->lobster = ":/font/lobster.ttf";
     // qt_awesoome
     m_QtAwesome = new QtAwesome(qApp);
 }
@@ -53,5 +50,17 @@ QIcon GManager::pictoLoad(int picto, QColor color) {
      m_QtAwesome->setDefaultOption("color", color);
      m_QtAwesome->setDefaultOption("color-active", color);
     return  m_QtAwesome->icon(picto);
+}
+//===============================================
+void GManager::fontList() {
+    QFontDatabase lFontDb;
+    for(int i = 0; i < lFontDb.families().size(); i++) {
+        qDebug() << lFontDb.families().at(i);
+    }
+}
+//===============================================
+void GManager::fontInit() {
+    QFontDatabase::addApplicationFont(":/font/lobster.ttf");
+    QFontDatabase::addApplicationFont(":/font/akronim.ttf");
 }
 //===============================================

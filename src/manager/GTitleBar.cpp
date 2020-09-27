@@ -6,7 +6,6 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     setObjectName("GTitleBar");
     sGQt* lQt = GManager::Instance()->dataGet()->qt;
     sGTitleBar* lTitleBar = GManager::Instance()->dataGet()->title_bar;
-    sGFont* lFont = GManager::Instance()->dataGet()->font;
     
     m_icon = new QToolButton;  
     m_icon->setIcon(QIcon(lTitleBar->icon_file));
@@ -19,10 +18,6 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     m_title->setText(lQt->title);
     m_title->setAlignment(Qt::AlignLeft);
     m_title->setMargin(0);
-    int id = QFontDatabase::addApplicationFont("data/font/Lobster-Regular.ttf");
-    QString family = QFontDatabase::applicationFontFamilies(id).at(0);
-    QFont monospace(family, 26);
-    m_title->setFont(monospace);
     
     m_fullscreen = new QToolButton;    
     m_fullscreen->setIcon(GManager::Instance()->pictoLoad(fa::arrowsalt, lTitleBar->color));
@@ -81,6 +76,14 @@ void GTitleBar::slotTitleClick() {
 //===============================================
 void GTitleBar::slotTitleUpdate() {
     sGTitleBar* lTitleBar = GManager::Instance()->dataGet()->title_bar;
-    m_maximize->setIcon(GManager::Instance()->pictoLoad(lTitleBar->maximize_icon, lTitleBar->color));
+    if(lTitleBar->update == "maximize_fa") {
+        m_maximize->setIcon(GManager::Instance()->pictoLoad(lTitleBar->update_fa, lTitleBar->color));
+    }
+    else if(lTitleBar->update == "fullscreen_fa") {
+        m_fullscreen->setIcon(GManager::Instance()->pictoLoad(lTitleBar->update_fa, lTitleBar->color));
+    }
+    else if(lTitleBar->update == "fullscreen_img") {
+        m_fullscreen->setIcon(QIcon(lTitleBar->update_img));
+    }
 }
 //===============================================

@@ -13,6 +13,7 @@ QWidget, QWidget * {
 QFrame#GTitleBar * {
     color: teal;
     font-size: 16px;
+    font-family: "Lobster";
 }
 /* GTitleBar */
 QFrame#GTitleBar QToolButton:hover {

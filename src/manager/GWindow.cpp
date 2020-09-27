@@ -39,9 +39,15 @@ void GWindow::slotTitleClcik() {
     else if(lTitleBar->click_id == "fullscreen") {
         if(windowState() != Qt::WindowFullScreen) {
             showFullScreen();
+            lTitleBar->update = "fullscreen_img";
+            lTitleBar->update_img = ":/img/exit_fullscreen.png";
+            emit emitTitleUpdate();
         }
         else {
             showNormal();
+            lTitleBar->update = "fullscreen_fa";
+            lTitleBar->update_fa = fa::arrowsalt;
+            emit emitTitleUpdate();
         }
     }
     else if(lTitleBar->click_id == "minimize") {
@@ -50,12 +56,14 @@ void GWindow::slotTitleClcik() {
     else if(lTitleBar->click_id == "maximize") {
         if(windowState() != Qt::WindowMaximized) {
             showMaximized();
-            lTitleBar->maximize_icon = fa::windowrestore;
+            lTitleBar->update = "maximize_fa";
+            lTitleBar->update_fa = fa::windowrestore;
             emit emitTitleUpdate();
         }
         else {
             showNormal();
-            lTitleBar->maximize_icon = fa::windowmaximize;
+            lTitleBar->update = "maximize_fa";
+            lTitleBar->update_fa = fa::windowmaximize;
             emit emitTitleUpdate();
         }
     }
