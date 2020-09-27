@@ -12,6 +12,7 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     m_icon->setIcon(GManager::Instance()->pictoLoad(fa::cogs, lColor));
     m_icon->setIconSize(QSize(lSize, lSize));
     m_icon->setCursor(Qt::PointingHandCursor);
+    m_icon->setObjectName("icon");
     
     m_title = new QLabel;    
     m_title->setText(lQt->title);

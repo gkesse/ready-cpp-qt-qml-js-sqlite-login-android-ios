@@ -1,6 +1,6 @@
 /*===============================================*/
 /* QWidget */
-QWidget {
+QWidget, QWidget * {
     background-color: transparent;
     background-color: rgba(20, 20, 20, 100%);
     font-family: arial;
@@ -9,15 +9,21 @@ QWidget {
     border: none;
 }
 /*===============================================*/
-/* QLabel */
-QLabel {
-    color: teal;
-    font-size: 32px;
-}
-/*===============================================*/
 /* GTitleBar */
 QFrame#GTitleBar * {
     color: teal;
     font-size: 16px;
+}
+/* GTitleBar */
+QFrame#GTitleBar QToolButton:hover {
+    background-color: rgba(255, 255, 255, 20%);
+}
+/* GTitleBar */
+QFrame#GTitleBar QToolButton:pressed {
+    background-color: transparent;
+}
+/* GTitleBar */
+QFrame#GTitleBar QToolButton#icon:hover {
+    background-color: transparent;
 }
 /*===============================================*/
