@@ -15,10 +15,13 @@ public:
     ~GManager();
     static GManager* Instance();
     sGManager* dataGet();
+    void styleLoad();
+    QIcon pictoLoad(int picto, QColor color = "white");
 
 private:
     static GManager* m_instance;
     sGManager* m_mgr;
+    QtAwesome* m_QtAwesome;
 };
 //===============================================
 struct _sGManager {
@@ -28,6 +31,7 @@ struct _sGManager {
 struct _sGQt {
     QString app_name;
     QString title;
+    QString style_file;
     int width;
     int height;
 };
