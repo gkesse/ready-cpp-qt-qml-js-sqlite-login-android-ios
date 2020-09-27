@@ -17,9 +17,11 @@ GWindow::GWindow(QWidget* parent) : QFrame(parent) {
     lLayout->setMargin(0);
     
     setLayout(lLayout);
+    
     setWindowTitle(lQt->title);
     setWindowIcon(QIcon(lTitleBar->icon_file));
     resize(lQt->width, lQt->height);
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 
     connect(m_titleBar, SIGNAL(emitTitleClick()), this, SLOT(slotTitleClcik()));
     connect(this, SIGNAL(emitTitleUpdate()), m_titleBar, SLOT(slotTitleUpdate()));

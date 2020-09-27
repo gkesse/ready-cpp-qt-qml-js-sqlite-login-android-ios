@@ -21,6 +21,7 @@ signals:
 private:
     QToolButton* m_icon;
     QLabel* m_title;
+    QToolButton* m_fullscreen;
     QToolButton* m_minimize;
     QToolButton* m_maximize;
     QToolButton* m_close;
