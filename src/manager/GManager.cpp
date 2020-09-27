@@ -19,6 +19,9 @@ GManager::GManager() {
     m_mgr->title_bar->icon_size = 16;
     m_mgr->title_bar->color = "teal";
     m_mgr->title_bar->url = "https://readydev.ovh";
+    // font
+    m_mgr->font = new sGFont;
+    m_mgr->font->lobster = ":/font/lobster.ttf";
     // qt_awesoome
     m_QtAwesome = new QtAwesome(qApp);
 }

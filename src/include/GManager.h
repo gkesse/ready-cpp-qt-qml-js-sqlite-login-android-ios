@@ -7,6 +7,7 @@
 typedef struct _sGManager sGManager;
 typedef struct _sGQt sGQt;
 typedef struct _sGTitleBar sGTitleBar;
+typedef struct _sGFont sGFont;
 //===============================================
 class GManager {
 private:
@@ -28,6 +29,7 @@ private:
 struct _sGManager {
     sGQt* qt;
     sGTitleBar* title_bar;
+    sGFont* font;
 };
 //===============================================
 struct _sGQt {
@@ -41,11 +43,15 @@ struct _sGQt {
 //===============================================
 struct _sGTitleBar {
     QString icon_file;
-    QString clickId;
+    QString click_id;
     QString url;
     QColor color;
     int icon_size;
     int maximize_icon;
+};
+//===============================================
+struct _sGFont {
+    QString lobster;
 };
 //===============================================
 #endif

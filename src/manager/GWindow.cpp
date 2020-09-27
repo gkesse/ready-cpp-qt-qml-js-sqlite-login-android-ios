@@ -33,25 +33,33 @@ GWindow::~GWindow() {
 //===============================================
 void GWindow::slotTitleClcik() {
     sGTitleBar* lTitleBar = GManager::Instance()->dataGet()->title_bar;
-    if(lTitleBar->clickId == "icon") {
+    if(lTitleBar->click_id == "icon") {
         QDesktopServices::openUrl(QUrl(lTitleBar->url));
     }
-    else if(lTitleBar->clickId == "minimize") {
+    else if(lTitleBar->click_id == "fullscreen") {
+        if(windowState() != Qt::WindowFullScreen) {
+            showFullScreen();
+        }
+        else {
+            showNormal();
+        }
+    }
+    else if(lTitleBar->click_id == "minimize") {
         showMinimized();
     }
-    else if(lTitleBar->clickId == "maximize") {
-        if(windowState() == Qt::WindowMaximized) {
-            showNormal();
-            lTitleBar->maximize_icon = fa::windowmaximize;
-            emit emitTitleUpdate();
-        }
-        else if(windowState() == Qt::WindowNoState) {
+    else if(lTitleBar->click_id == "maximize") {
+        if(windowState() != Qt::WindowMaximized) {
             showMaximized();
             lTitleBar->maximize_icon = fa::windowrestore;
             emit emitTitleUpdate();
         }
+        else {
+            showNormal();
+            lTitleBar->maximize_icon = fa::windowmaximize;
+            emit emitTitleUpdate();
+        }
     }
-    else if(lTitleBar->clickId == "close") {
+    else if(lTitleBar->click_id == "close") {
         close();
     }
 }

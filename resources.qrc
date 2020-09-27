@@ -6,4 +6,7 @@
     <qresource prefix="/img">
         <file alias="logo.png">data/img/logo.png</file>
     </qresource>
+    <qresource prefix="/font">
+        <file alias="lobster.ttf">data/font/Lobster-Regular.ttf</file>
+    </qresource>
 </RCC>
