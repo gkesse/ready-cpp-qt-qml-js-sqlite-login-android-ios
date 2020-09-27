@@ -13,6 +13,12 @@ GManager::GManager() {
     m_mgr->qt->style_file = ":/qss/styles.qss";
     m_mgr->qt->width = 640;
     m_mgr->qt->height = 480;
+    // title_bar
+    m_mgr->title_bar = new sGTitleBar;
+    m_mgr->title_bar->icon_file = ":/img/logo.png";
+    m_mgr->title_bar->icon_size = 16;
+    m_mgr->title_bar->color = "teal";
+    m_mgr->title_bar->url = "https://readydev.ovh";
     // qt_awesoome
     m_QtAwesome = new QtAwesome(qApp);
 }

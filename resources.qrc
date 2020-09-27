@@ -3,4 +3,7 @@
     <qresource prefix="/qss">
         <file alias="styles.qss">data/qss/styles.qss</file>
     </qresource>
+    <qresource prefix="/img">
+        <file alias="logo.png">data/img/logo.png</file>
+    </qresource>
 </RCC>

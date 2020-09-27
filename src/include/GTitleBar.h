@@ -10,6 +10,13 @@ class GTitleBar : public QFrame {
 public:
     GTitleBar(QWidget* parent  = 0);
     ~GTitleBar();
+
+public slots:
+    void slotTitleClick();
+    void slotTitleUpdate();
+    
+signals:
+    void emitTitleClick();
     
 private:
     QToolButton* m_icon;
@@ -17,6 +24,7 @@ private:
     QToolButton* m_minimize;
     QToolButton* m_maximize;
     QToolButton* m_close;
+    QMap<QWidget*, QString> m_widgetId;
 };
 //===============================================
 #endif

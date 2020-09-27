@@ -6,6 +6,7 @@
 //===============================================
 typedef struct _sGManager sGManager;
 typedef struct _sGQt sGQt;
+typedef struct _sGTitleBar sGTitleBar;
 //===============================================
 class GManager {
 private:
@@ -26,14 +27,25 @@ private:
 //===============================================
 struct _sGManager {
     sGQt* qt;
+    sGTitleBar* title_bar;
 };
 //===============================================
 struct _sGQt {
     QString app_name;
     QString title;
     QString style_file;
+    QStackedWidget* page_map;
     int width;
     int height;
+};
+//===============================================
+struct _sGTitleBar {
+    QString icon_file;
+    QString clickId;
+    QString url;
+    QColor color;
+    int icon_size;
+    int maximize_icon;
 };
 //===============================================
 #endif
