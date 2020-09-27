@@ -19,7 +19,7 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     m_title->setText(lQt->title);
     m_title->setAlignment(Qt::AlignLeft);
     m_title->setMargin(0);
-    int id = QFontDatabase::addApplicationFont(lFont->lobster);
+    int id = QFontDatabase::addApplicationFont("data/font/Lobster-Regular.ttf");
     QString family = QFontDatabase::applicationFontFamilies(id).at(0);
     QFont monospace(family, 26);
     m_title->setFont(monospace);
