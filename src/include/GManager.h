@@ -37,6 +37,7 @@ struct _sGQt {
     QString title;
     QString style_file;
     QStackedWidget* page_map;
+    QMap<QString, int> page_id;
     int width;
     int height;
 };

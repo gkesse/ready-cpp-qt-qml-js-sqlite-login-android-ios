@@ -1,6 +1,7 @@
 //===============================================
 #include "GWindow.h"
 #include "GTitleBar.h"
+#include "GPageAdmin.h"
 #include "GManager.h"
 //===============================================
 GWindow::GWindow(QWidget* parent) : QFrame(parent) {
@@ -9,12 +10,13 @@ GWindow::GWindow(QWidget* parent) : QFrame(parent) {
 
     m_titleBar = new GTitleBar;
     
-    lQt->page_map = new QStackedWidget;
+    createPage();
     
     QVBoxLayout* lLayout = new QVBoxLayout;    
     lLayout->addWidget(m_titleBar, 0);
     lLayout->addWidget(lQt->page_map, 1);
     lLayout->setMargin(0);
+    lLayout->setSpacing(0);
     
     setLayout(lLayout);
     
@@ -29,6 +31,18 @@ GWindow::GWindow(QWidget* parent) : QFrame(parent) {
 //===============================================
 GWindow::~GWindow() {
     
+}
+//===============================================
+void GWindow::createPage() {
+    sGQt* lQt = GManager::Instance()->dataGet()->qt;
+    lQt->page_map = new QStackedWidget;
+    addPage("ADMIN", new GPageAdmin);
+}
+//===============================================
+void GWindow::addPage(QString key, QWidget* widget) {
+    sGQt* lQt = GManager::Instance()->dataGet()->qt;
+    lQt->page_map->addWidget(widget);
+    lQt->page_id[key] = lQt->page_map->count();
 }
 //===============================================
 void GWindow::slotTitleClcik() {

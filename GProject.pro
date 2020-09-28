@@ -18,10 +18,14 @@ INCLUDEPATH +=\
     
 HEADERS +=\
     $$PWD/src/include/GWindow.h \
+    $$PWD/src/include/GPageAdmin.h \
     $$PWD/src/include/GTitleBar.h \
+    $$PWD/src/include/GMenuIcon.h \
     
 SOURCES +=\
     $$PWD/src/main.cpp \
     $$PWD/src/manager/GManager.cpp \
     $$PWD/src/manager/GWindow.cpp \
+    $$PWD/src/manager/GPageAdmin.cpp \
     $$PWD/src/manager/GTitleBar.cpp \
+    $$PWD/src/manager/GMenuIcon.cpp \

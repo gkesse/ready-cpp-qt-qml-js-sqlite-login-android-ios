@@ -12,6 +12,10 @@ public:
     GWindow(QWidget* parent  = 0);
     ~GWindow();
     
+private:
+    void createPage();
+    void addPage(QString key, QWidget* widget);
+    
 public slots:
     void slotTitleClcik();
     
