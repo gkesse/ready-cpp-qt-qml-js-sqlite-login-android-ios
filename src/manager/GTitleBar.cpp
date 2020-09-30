@@ -9,7 +9,7 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     
     m_icon = new QToolButton;  
     m_icon->setIcon(QIcon(lTitleBar->icon_file));
-    m_icon->setIconSize(QSize(lTitleBar->icon_size, lTitleBar->icon_size));
+    m_icon->setIconSize(QSize(lTitleBar->logo_size, lTitleBar->logo_size));
     m_icon->setCursor(Qt::PointingHandCursor);
     m_icon->setObjectName("icon");
     m_widgetId[m_icon] = "icon";
@@ -43,17 +43,17 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     m_close->setCursor(Qt::PointingHandCursor);
     m_widgetId[m_close] = "close";
     
-    QHBoxLayout* lLayout = new QHBoxLayout;    
-    lLayout->addWidget(m_icon, 0);
-    lLayout->addWidget(m_title, 1);
-    lLayout->addWidget(m_fullscreen, 0);
-    lLayout->addWidget(m_minimize, 0);
-    lLayout->addWidget(m_maximize, 0);
-    lLayout->addWidget(m_close, 0);
-    lLayout->setMargin(0);
-    lLayout->setSpacing(0);
+    m_mainLayout = new QHBoxLayout;    
+    m_mainLayout->addWidget(m_icon, 0);
+    m_mainLayout->addWidget(m_title, 1);
+    m_mainLayout->addWidget(m_fullscreen, 0);
+    m_mainLayout->addWidget(m_minimize, 0);
+    m_mainLayout->addWidget(m_maximize, 0);
+    m_mainLayout->addWidget(m_close, 0);
+    m_mainLayout->setContentsMargins(10, 0, 10, 20);
+    m_mainLayout->setSpacing(2);
     
-    setLayout(lLayout);
+    setLayout(m_mainLayout);
 
     connect(m_icon, SIGNAL(clicked()), this, SLOT(slotTitleClick()));
     connect(m_fullscreen, SIGNAL(clicked()), this, SLOT(slotTitleClick()));

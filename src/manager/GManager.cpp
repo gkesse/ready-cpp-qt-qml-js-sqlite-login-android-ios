@@ -11,13 +11,15 @@ GManager::GManager() {
     m_mgr->qt->app_name = "ReadyApp";
     m_mgr->qt->title = m_mgr->qt->app_name;
     m_mgr->qt->style_file = ":/qss/styles.qss";
+    m_mgr->qt->font_list = "Lobster;Akronim;Allan";
     m_mgr->qt->width = 640;
     m_mgr->qt->height = 480;
     // title_bar
     m_mgr->title_bar = new sGTitleBar;
-    m_mgr->title_bar->icon_file = ":/img/logo.png";
+    m_mgr->title_bar->icon_file = ":/img/logo_icon.png";
     m_mgr->title_bar->icon_size = 16;
-    m_mgr->title_bar->color = "teal";
+    m_mgr->title_bar->logo_size = 20;
+    m_mgr->title_bar->color = "white";
     m_mgr->title_bar->url = "https://readydev.ovh";
     // menu_icon
     m_mgr->menu_icon = new sGMenuIcon;
@@ -66,7 +68,11 @@ void GManager::fontList() {
 }
 //===============================================
 void GManager::fontLoad() {
-    QFontDatabase::addApplicationFont(":/font/lobster.ttf");
-    QFontDatabase::addApplicationFont(":/font/akronim.ttf");
+    QStringList lFontMap = m_mgr->qt->font_list.split(";");
+    for(int i = 0; i < lFontMap.count(); i++) {
+        QString lFontName = lFontMap.at(i);
+        QString lFont = ":/font/" + lFontName + ".ttf";
+        QFontDatabase::addApplicationFont(lFont);
+    }
 }
 //===============================================

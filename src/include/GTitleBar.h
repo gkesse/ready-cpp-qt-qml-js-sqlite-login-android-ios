@@ -26,6 +26,7 @@ private:
     QToolButton* m_maximize;
     QToolButton* m_close;
     QMap<QWidget*, QString> m_widgetId;
+    QHBoxLayout* m_mainLayout;
 };
 //===============================================
 #endif

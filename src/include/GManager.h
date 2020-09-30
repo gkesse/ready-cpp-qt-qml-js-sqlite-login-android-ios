@@ -38,6 +38,7 @@ struct _sGQt {
     QString app_name;
     QString title;
     QString style_file;
+    QString font_list;
     QStackedWidget* page_map;
     QMap<QString, int> page_id;
     int width;
@@ -51,6 +52,7 @@ struct _sGTitleBar {
     QColor color;
     QString update;
     QString update_img;
+    int logo_size;
     int icon_size;
     int update_fa;
 };

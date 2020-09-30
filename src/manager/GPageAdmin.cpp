@@ -6,6 +6,7 @@
 GPageAdmin::GPageAdmin(QWidget* parent) : QFrame(parent) {
     setObjectName("GPageAdmin");
     G_PAGE_ID = "HOME";
+    
     createMenuKey();
     createMenuName();
     createMenuPicto();

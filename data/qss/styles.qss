@@ -11,9 +11,9 @@ QWidget, QWidget * {
 /*===============================================*/
 /* GTitleBar */
 QFrame#GTitleBar * {
-    color: teal;
-    font-size: 16px;
-    font-family: "Lobster";
+    color: white;
+    font-size: 30px;
+    font-family: "Akronim";
 }
 /* GTitleBar */
 QFrame#GTitleBar QToolButton:hover {
@@ -24,7 +24,22 @@ QFrame#GTitleBar QToolButton:pressed {
     background-color: transparent;
 }
 /* GTitleBar */
+QFrame#GTitleBar QToolButton#icon {
+    background-color: transparent;
+}
+/* GTitleBar */
 QFrame#GTitleBar QToolButton#icon:hover {
     background-color: transparent;
+}
+/*===============================================*/
+/* GMenuIcon */
+QFrame#GMenuIcon * {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    font-family: "Allan";
+}
+QFrame#GMenuIcon:hover {
+    background-color: rgba(255, 255, 255, 20%);
 }
 /*===============================================*/
