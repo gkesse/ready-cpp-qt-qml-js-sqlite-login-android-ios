@@ -13,12 +13,17 @@ public:
     
 private:
     void createMenuKey();
-    void createMenuAddress();
-    void createMenuBody();
+    void createMenuName();
+    void createMenuPicto();
+    void createMenuPad();
     void createLayout();
     
 private:
+    QString G_PAGE_ID;
     QStringList m_menuKey;
+    QMap<QString, QString> m_menuName;
+    QMap<QString, int> m_menuPicto;
+    QGridLayout* m_menuPadLayout;
     QHBoxLayout* m_menuAddressLayout;
     QHBoxLayout* m_menuBodyLayout;
     QVBoxLayout* m_mainLayout;

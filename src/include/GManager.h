@@ -7,6 +7,7 @@
 typedef struct _sGManager sGManager;
 typedef struct _sGQt sGQt;
 typedef struct _sGTitleBar sGTitleBar;
+typedef struct _sGMenuIcon sGMenuIcon;
 //===============================================
 class GManager {
 private:
@@ -19,7 +20,7 @@ public:
     void styleLoad();
     QIcon pictoLoad(int picto, QColor color = "white");
     void fontList();
-    void fontInit();
+    void fontLoad();
 
 private:
     static GManager* m_instance;
@@ -30,6 +31,7 @@ private:
 struct _sGManager {
     sGQt* qt;
     sGTitleBar* title_bar;
+    sGMenuIcon* menu_icon;
 };
 //===============================================
 struct _sGQt {
@@ -51,6 +53,13 @@ struct _sGTitleBar {
     QString update_img;
     int icon_size;
     int update_fa;
+};
+//===============================================
+struct _sGMenuIcon {
+    QColor icon_color;
+    int icon_size;
+    int col_max;
+    int default_icon;
 };
 //===============================================
 #endif

@@ -19,6 +19,12 @@ GManager::GManager() {
     m_mgr->title_bar->icon_size = 16;
     m_mgr->title_bar->color = "teal";
     m_mgr->title_bar->url = "https://readydev.ovh";
+    // menu_icon
+    m_mgr->menu_icon = new sGMenuIcon;
+    m_mgr->menu_icon->icon_color = "white";
+    m_mgr->menu_icon->icon_size = 50;
+    m_mgr->menu_icon->col_max = 5;
+    m_mgr->menu_icon->default_icon = fa::home;
     // qt_awesoome
     m_QtAwesome = new QtAwesome(qApp);
 }
@@ -59,7 +65,7 @@ void GManager::fontList() {
     }
 }
 //===============================================
-void GManager::fontInit() {
+void GManager::fontLoad() {
     QFontDatabase::addApplicationFont(":/font/lobster.ttf");
     QFontDatabase::addApplicationFont(":/font/akronim.ttf");
 }

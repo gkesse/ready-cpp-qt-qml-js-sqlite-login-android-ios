@@ -12,13 +12,13 @@ GWindow::GWindow(QWidget* parent) : QFrame(parent) {
     
     createPage();
     
-    QVBoxLayout* lLayout = new QVBoxLayout;    
-    lLayout->addWidget(m_titleBar, 0);
-    lLayout->addWidget(lQt->page_map, 1);
-    lLayout->setMargin(0);
-    lLayout->setSpacing(0);
+    m_mainLayout = new QVBoxLayout;    
+    m_mainLayout->addWidget(m_titleBar, 0);
+    m_mainLayout->addWidget(lQt->page_map, 1);
+    m_mainLayout->setMargin(0);
+    m_mainLayout->setSpacing(0);
     
-    setLayout(lLayout);
+    setLayout(m_mainLayout);
     
     setWindowTitle(lQt->title);
     setWindowIcon(QIcon(lTitleBar->icon_file));

@@ -4,7 +4,7 @@
 //===============================================
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
-    GManager::Instance()->fontInit();
+    GManager::Instance()->fontLoad();
     GManager::Instance()->styleLoad();
     GWindow* lWindow = new GWindow;
     lWindow->show();

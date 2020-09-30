@@ -14,11 +14,13 @@ public:
 public:
     void setIcon(QIcon icon);
     void setTitle(QString title);
-
+    void setIconSize(int width, int height);
+    
 private:
     QToolButton* m_icon;
     QLabel* m_title;
     QVBoxLayout* m_mainLayout;
+    QHBoxLayout* m_iconLayout;
 };
 //===============================================
 #endif

@@ -24,6 +24,7 @@ signals:
     
 private:
     GTitleBar* m_titleBar;
+    QVBoxLayout* m_mainLayout;
 };
 //===============================================
 #endif

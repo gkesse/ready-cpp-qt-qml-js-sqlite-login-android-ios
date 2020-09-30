@@ -50,8 +50,8 @@ GTitleBar::GTitleBar(QWidget* parent) : QFrame(parent) {
     lLayout->addWidget(m_minimize, 0);
     lLayout->addWidget(m_maximize, 0);
     lLayout->addWidget(m_close, 0);
-    lLayout->setMargin(9);
-    lLayout->setSpacing(50;
+    lLayout->setMargin(0);
+    lLayout->setSpacing(0);
     
     setLayout(lLayout);
 
