@@ -12,3 +12,7 @@ GMainWindow::~GMainWindow() {
     delete ui;
 }
 //===============================================
+void GMainWindow::on_exitButton_clicked() {
+    QApplication::exit();
+}
+//===============================================

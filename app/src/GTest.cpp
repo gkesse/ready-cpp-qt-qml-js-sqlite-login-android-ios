@@ -46,7 +46,7 @@ void GTest::runConsole(int _argc, char** _argv, char** _envs) {
 void GTest::runMainWindow(int _argc, char** _argv, char** _envs) {
     printf("%s...\n", __PRETTY_FUNCTION__);
     QApplication lApp(_argc, _argv);
-    QMainWindow lWindow;
+    GMainWindow lWindow;
     lWindow.show();
     lApp.exec();
 }
