@@ -27,6 +27,8 @@
 #include <libxml/parser.h>
 #include <libxml/tree.h>
 #include <libxml/xpath.h>
+// qt
+#include <QtWidgets>
 //===============================================
 typedef unsigned char uchar;
 //===============================================

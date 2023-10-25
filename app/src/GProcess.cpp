@@ -26,8 +26,14 @@ void GProcess::run(int _argc, char** _argv, char** _envs) {
     GString lModule = "";
     if(_argc > 1) lModule = _argv[1];
 
-    if(lModule == "test") {
+    if(lModule == "") {
+        m_logs.addError("Le module est obligatoire.");
+    }
+    else if(lModule == "test") {
         runTest(_argc, _argv, _envs);
+    }
+    else {
+        m_logs.addError("Le module est inconnu.");
     }
 }
 //===============================================
