@@ -1,10 +1,5 @@
 #================================================
-# gitignore
+export "LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH"
 #================================================
-
-/**/.cproject
-/**/.project
-/**/tmp/
-/**/.settings/
-
+export "ENV_TYPE=TEST"
 #================================================
