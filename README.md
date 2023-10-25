@@ -1,3 +1,3 @@
 # ReadyQt
 
-ReadyQt est une bibliothèque de développement d'interfaces homme-machine sous Qt en C++.
+Tutoriel de crÃ©ation d'interface homme machine en C++ avec Qt.
