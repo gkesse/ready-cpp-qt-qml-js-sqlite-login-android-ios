@@ -14,6 +14,8 @@ class GMainWindow : public QMainWindow {
 public:
     explicit GMainWindow(QWidget *parent = nullptr);
     ~GMainWindow();
+
+public slots:
     void on_exitButton_clicked();
 
 private:
