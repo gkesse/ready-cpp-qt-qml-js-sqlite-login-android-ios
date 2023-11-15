@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/qml">
+        <file alias="main.qml">data/qml/main.qml</file>
+        <file alias="GLoginUi.qml">data/qml/GLoginUi.qml</file>
+        <file alias="GButtonUi.qml">data/qml/GButtonUi.qml</file>
+        <file alias="GRegisterUi.qml">data/qml/GRegisterUi.qml</file>
+        <file alias="GInfoUi.qml">data/qml/GInfoUi.qml</file>
+        <file alias="GForgotUi.qml">data/qml/GForgotUi.qml</file>
+        <file alias="GLineEdit.qml">data/qml/GLineEdit.qml</file>
+    </qresource>
+    <qresource prefix="/font">
+        <file alias="fontawesome-webfont.ttf">data/font/fontawesome-webfont.ttf</file>
+    </qresource>
+    <qresource prefix="/js">
+        <file alias="GBackend.js">data/js/GBackend.js</file>
+    </qresource>
+</RCC>
