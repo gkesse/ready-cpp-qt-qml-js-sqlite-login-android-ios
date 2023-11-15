@@ -1,3 +1,4 @@
 # ReadyQt
 
-Tutoriel de création d'interface homme machine en C++ avec Qt.
+Le but de ce tutoriel est de vous apprendre à créer une application mobile Android - iOS 
+en C++ - Qt - QML - JS pour la gestion d'un système connexion et d'inscription de nouveaux utilisateurs.
