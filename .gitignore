@@ -10,5 +10,6 @@
 /src/.project
 /src/.settings/
 /src/*.pro.user
+/bin/Databases/
 
 #================================================
