@@ -2,9 +2,13 @@
 # gitignore
 #================================================
 
-/**/.cproject
-/**/.project
-/**/tmp/
-/**/.settings/
+/build*/
+/cmd/
+/doc/
+/eclipse/
+/src/.cproject
+/src/.project
+/src/.settings/
+/src/*.pro.user
 
 #================================================
