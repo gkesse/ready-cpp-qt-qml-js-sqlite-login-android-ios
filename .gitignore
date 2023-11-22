@@ -2,14 +2,14 @@
 # gitignore
 #================================================
 
-/build*/
-/cmd/
-/doc/
-/eclipse/
-/src/.cproject
-/src/.project
-/src/.settings/
-/src/*.pro.user
-/bin/Databases/
+/**/build*/
+/**/cmd/
+/**/~*.docx
+/**/eclipse/
+/**/.cproject
+/**/.project
+/**/.settings/
+/**/*.pro.user
+/**/Databases/
 
 #================================================
